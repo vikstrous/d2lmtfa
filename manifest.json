@@ -1,0 +1,17 @@
+{
+  "name": "d2lmtfa",
+  "version": "1.2",
+  "manifest_version": 2,
+  "icons": {
+    "16": "/icon16.png",
+    "48": "/icon48.png",
+    "128": "/icon128.png"
+  },
+  "description": "Prevents Desire2Learn from logging you out when you are inactive.",
+  "content_scripts": [
+    {
+      "matches": ["https://learn.uwaterloo.ca/*"],
+      "js": ["jquery-1.9.1.min.js", "main.js"]
+    }
+  ]
+}
